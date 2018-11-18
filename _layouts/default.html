@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include script_header.html %}
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar">
+    <div id="main-wrapper">
+      <!-- Page Preloader -->
+      <div id="preloader">
+        <div id="status">
+          <div class="status-mes"></div>
+        </div>
+      </div>
+
+      <div class="columns-block">
+        {{ content }}
+      </div>
+      <!-- .columns-block -->
+    </div>
+    <!-- #main-wrapper -->
+    {% include script_footer.html %}
+  </body>
+</html>

@@ -1,0 +1,137 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="left-col-block blocks">
+    <header class="header">
+      <div class="logo">
+        <img src="{{ site.data.info.logo | relative_url }}" alt="">
+      </div>
+      <div class="content text-center">
+        <h1>{{site.data.info.greeting.title}}</h1>
+        
+        <p class="lead">{{site.data.info.greeting.subtitle}}</p>
+        <ul class="social-icon">
+          {% for item in site.data.info.social_media %}
+          <li><a href="{{item.url}}"><i class="fa fa-{{item.icon}}" aria-hidden="true"></i></a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="profile-img" style="background-image: url({{ site.data.info.cover | relative_url }});"></div>
+    </header>
+    <!-- .header-->
+  </div>
+  
+  <div class="right-col-block blocks">
+    <section class="intro section-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-title">
+              <h2>{{ page.title }}</h2>
+            </div>
+          </div>
+          <div class="col-md-12">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrapper section-experience gray-bg">
+      <div class="container-fluid">
+        {% include section_title.html title="Work Experience" %}
+        <div class="row">
+          <div class="col-md-12">
+            {% for item in site.data.info.work_experience %}
+            <div class="content-item">
+              <small>{{ item.year }}</small>
+              <h3>{{ item.jobtitle }}</h3>
+              <h4>{{ item.company }}</h4>
+              <p>{{item.location}}</p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- .section-experience -->
+
+    <section class="section-wrapper section-education">
+      <div class="container-fluid">
+          {% include section_title.html title="Education" %}
+        <div class="row">
+          <div class="col-md-12">
+            {% for item in site.data.info.education %}
+            <div class="content-item">
+              <small>{{ item.year }}</small>
+              <h3>{{ item.degree }}</h3>
+              <h4>{{ item.school }}</h4>
+              <p>{{ item.location }}</p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- .section-education -->
+
+    <section class="section-wrapper portfolio-section gray-bg">
+      <div class="container-fluid">
+        {% include section_title.html title="Selected Works" %}
+        <div class="row">
+          {% assign works = site.works | where:'featured', true %}
+          {% for item in works %}
+          <div class="col-md-6">
+            <a class="portfolio-item" href="http://{{ item.website }}" target="_blank">
+              <div class="portfolio-thumb">
+                <img src="{{ item.thumbnail | relative_url }}" alt="">
+              </div>
+              <div class="portfolio-info">
+                <h3>{{ item.title }}</h3>
+                <small>{{ item.website }}</small>
+              </div>
+              <!-- portfolio-info -->
+            </a>
+            <!-- .portfolio-item -->
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+    <!-- .portfolio -->
+
+    <section class="section-contact section-wrapper">
+      <div class="container-fluid">
+        {% include section_title.html title="Contact" %}
+        <div class="row">
+          <div class="col-md-12">
+            <address>
+              <strong>Email</strong><br>
+              <a href="mailto:{{ site.data.info.contact.email }}">{{ site.data.info.contact.email }}</a>
+            </address>
+            <address>
+              <strong>Location</strong><br>
+              {{ site.data.info.contact.current_location }}
+            </address>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer gray-bg">
+      <div class="copyright-section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="copytext">
+                &copy;2018 {{ site.data.info.footer }} 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>

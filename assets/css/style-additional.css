@@ -1,0 +1,31 @@
+h1, h2, h3, h4, h5 {
+  color: #223f99;
+}
+body {
+  color: #7878a6;
+}
+#preloader {
+  background: #2c3e7c;
+}
+.header .logo {
+  text-align: left;
+  padding: 10%;
+}
+.header .logo img {
+  width: 150px;
+}
+.gray-bg {
+  background: #f4f6ff;
+}
+.section-title h2 {
+  color: #2d4db7;
+}
+.portfolio-item .portfolio-info {
+  background: -webkit-linear-gradient(top, transparent 0%, rgb(112, 125, 171) 100%);
+}
+
+@media (max-width: 600px) {
+  .header .logo {
+    z-index: 2;
+  }
+}

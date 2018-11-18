@@ -1,0 +1,57 @@
+logo: assets/img/logo-pikarlabs-white.png
+cover: assets/img/cover-small-blue.jpg
+
+greeting:
+  title: Hello, I'm Dzulfikar
+  subtitle: I'm a front-end developer experienced in modern web technologies.
+
+footer: Pikarlabs. All rights reserved <br/> Made with <a href="https://jekyllrb.com" target="_blank">Jekyll</a> and <a href="https://themehippo.com" target="_blank">ThemeHippo</a>
+contact:
+  email: dzulfikar.adiputra@gmail.com
+  current_location: Surabaya, Indonesia
+
+social_media:
+  - icon: facebook
+    url: http://facebook.com/dzulfikar.adiputra
+  - icon: twitter
+    url: http://twitter.com/superpikar
+  - icon: github
+    url: http://github.com/superpikar
+  - icon: codepen
+    url: http://codepen.com/superpikar
+  - icon: linkedin
+    url: https://www.linkedin.com/in/a-dzulfikar-adi-putra-25904053/
+
+work_experience:
+  - year: 2017 - 2018
+    jobtitle: Fullstack Developer
+    company: eWIDEPLUS
+    url: http://ewideplus.com
+    location: Seoul, South Korea
+  - year: 2014 - 2016
+    jobtitle: Reseacrh Asistant
+    company: Business Service Computing Laboratory, Pusan National University
+    location: Busan, South Korea
+  - year: 2012 - 2013
+    jobtitle: System Developer
+    company: PT. Jakarta Denshi
+    location: Surabaya, Indonesia
+
+education:
+  - year: 2014 - 2016
+    degree: Master Candidate of Industrial Engineering
+    school: Pusan National University
+    location: Busan, South Korea
+  - year: 2007 - 2011
+    degree: Bachelor of Informatics Engineering
+    school: Sepuluh Nopember Institut of Technology
+    url: http://its.ac.id
+    location: Surabaya, Indonesia
+
+interest:
+  - title: Books
+    content: Proactively extend market-driven e-tailers rather than enterprise-wide supply chains. Collaboratively embrace 24/7 processes rather than adaptive users. Seamlessly monetize alternative e-business.
+  - title: Sports
+    content: Assertively grow optimal methodologies after viral technologies. Appropriately developfrictionless technology for adaptive functionalities. Competently iterate functionalizednetworks for best-of-breed services.
+  - title: Art
+    content: Dramatically utilize superior infomediaries whereas functional core competencies. Enthusiastically repurpose synergistic vortals for customer directed portals. Interactively pursue sustainable leadership via
