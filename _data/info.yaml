@@ -23,6 +23,10 @@ social_media:
     url: https://www.linkedin.com/in/a-dzulfikar-adi-putra-25904053/
 
 work_experience:
+  - year: 2018 - current
+    jobtitle: Freelance Front-end Developer
+    company: "-"
+    location: Surabaya, Indonesia
   - year: 2017 - 2018
     jobtitle: Fullstack Developer
     company: eWIDEPLUS
